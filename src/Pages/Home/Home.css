@@ -1,0 +1,115 @@
+.content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .settings {
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  
+  .banner {
+    width: 40%;
+    align-self: center;
+    padding: 8px;
+  }
+  
+  @media (max-width: 800px) {
+    .content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .banner {
+      /* width: 30%;
+      padding: 0;
+      padding-top: 10px; */
+      display: none;
+    }
+    .settings {
+      width: 80%;
+      height:50%;
+      margin-top: 10vw;
+
+    }
+  
+  }
+  
+  .settings__select {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    flex: 0.8;
+    justify-content: space-evenly;
+    background-color: lavender;
+    border-radius:10px;
+  }
+
+  button {
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+  }
+  
+  
+  .button {
+    margin: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(29, 28, 28, 0.6);
+    --animation-color: #375cff;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  .frontimages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+  }

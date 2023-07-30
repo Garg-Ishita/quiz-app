@@ -1,0 +1,22 @@
+.title-button {
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+    background-color: transparent;
+    margin-top:10px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .divider {
+    margin: 10px;
+    width: 100%;
+    background-color: grey;
+  }
